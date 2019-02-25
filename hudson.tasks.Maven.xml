@@ -2,16 +2,9 @@
 <hudson.tasks.Maven_-DescriptorImpl>
   <installations>
     <hudson.tasks.Maven_-MavenInstallation>
-      <name>MVN36</name>
-      <properties>
-        <hudson.tools.InstallSourceProperty>
-          <installers>
-            <hudson.tasks.Maven_-MavenInstaller>
-              <id>3.6.0</id>
-            </hudson.tasks.Maven_-MavenInstaller>
-          </installers>
-        </hudson.tools.InstallSourceProperty>
-      </properties>
+      <name>mvn</name>
+      <home>/opt/apache-maven-3.6.0/</home>
+      <properties/>
     </hudson.tasks.Maven_-MavenInstallation>
   </installations>
 </hudson.tasks.Maven_-DescriptorImpl>

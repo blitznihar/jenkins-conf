@@ -1,0 +1,7 @@
+Started by user [8mha:////4FvebVPuX6R57WijHhpmzGF6IUvWtuZ8NmJPXJDrwVjIAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Building in workspace /var/lib/jenkins/workspace/testconfig
+[testconfig] $ /bin/sh -xe /tmp/jenkins2251278392067425254.sh
++ mvn -B -DskipTests clean package
+/tmp/jenkins2251278392067425254.sh: line 2: mvn: command not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

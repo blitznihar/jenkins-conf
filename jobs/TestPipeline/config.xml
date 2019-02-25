@@ -15,19 +15,13 @@
   <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.63">
     <script>pipeline {
     agent any
-    
+    tools {
+    maven &apos;mvn&apos;
+  }
      stages {
         stage(&apos;SCM&apos;) {
             steps {
                 git url: &apos;https://github.com/blitznihar/simple-java-maven-app.git&apos;
-            }
-        }
-        stage(&apos;SonarQube analysis&apos;) {
-            steps {
-                withSonarQubeEnv(&apos;SonarqubeServer&apos;) {
-                    // Optionally use a Maven environment you&apos;ve configured already
-                    sh &apos;mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.3.0.603:sonar&apos;
-                }
             }
         }
         stage(&apos;Build&apos;) {
